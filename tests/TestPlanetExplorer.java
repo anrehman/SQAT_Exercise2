@@ -15,4 +15,10 @@ public class TestPlanetExplorer {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
 		assertEquals(100, planetExplorer.gridSize.getY());		
 	}
+	
+	@Test
+	public void test_planetExplorer_setObjectCheckObstacles() {
+		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
+		assertEquals(1, planetExplorer.obstacles.size());		
+	}
 }

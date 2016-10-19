@@ -7,3 +7,5 @@
 1476877448790 test-last 1 401 false
 1476877448791 test-last 1 401 false
 1476877448792 test-last 1 401 false
+1476877485032 test-addition 1 16 true
+1476877485033 test-addition 1 16 true

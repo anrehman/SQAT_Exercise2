@@ -67,3 +67,8 @@ RefactoringAction 1476877472804 TestPlanetExplorer.java RENAME test_planetExplor
 RefactoringAction 1476877473817 TestPlanetExplorer.java RENAME test_planetExplorer_setObjectCheck()=>void test_planetExplorer_setObjectCheckX() METHOD
 RefactoringAction 1476877478333 TestPlanetExplorer.java RENAME test_planetExplorer_setObject()=>void test_planetExplorer_setObjectCheckY() METHOD
 EditAction 1476877482665 TestPlanetExplorer.java 480 2 4 2
+UnitTestCaseAction 1476877485031 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476877485032 TestPlanetExplorer.java OK
+RefactoringAction 1476877503878 TestPlanetExplorer.java ADD void test_planetExplorer_setObjectCheckY()/2 METHOD
+RefactoringAction 1476877510892 TestPlanetExplorer.java RENAME test_planetExplorer_setObjectCheckY()/2=>void test_planetExplorer_setObjectCheckObstacles() METHOD
+EditAction 1476877529674 TestPlanetExplorer.java 680 3 6 3
