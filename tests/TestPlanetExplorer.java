@@ -11,6 +11,8 @@ public class TestPlanetExplorer {
 	
 	@Test
 	public void test_planetExplorer_setObject() {
-		fail("Not yet implemented");
+		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
+		
+		
 	}
 }
