@@ -40,7 +40,7 @@ public class Position {
 		this.y = (this.y - 1);
 	}
 
-	public void decrementY() {
+	public void decrementX() {
 		this.x = (this.x - 1);
 	}
 }

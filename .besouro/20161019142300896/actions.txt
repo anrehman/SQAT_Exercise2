@@ -173,3 +173,6 @@ UnitTestSessionAction 1476879642149 TestPlanetExplorer.java FAIL
 RefactoringAction 1476879691774 Position.java ADD void decrementY() METHOD
 RefactoringAction 1476879698064 Position.java ADD void decrementY()/2 METHOD
 EditAction 1476879716596 Position.java 588 10 10 0
+CompilationAction 1476879718441 Position.java
+RefactoringAction 1476879722134 Position.java RENAME decrementY()/2=>void decrementX() METHOD
+EditAction 1476879722483 Position.java 588 10 10 0
