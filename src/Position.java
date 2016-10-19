@@ -32,4 +32,7 @@ public class Position {
 		this.y = (this.y + 1);
 	}
 
+	private void incrementX() {
+		this.x = (this.x + 1);
+	}
 }

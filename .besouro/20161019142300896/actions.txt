@@ -145,3 +145,6 @@ RefactoringAction 1476879213838 PlanetExplorer.java ADD void incrementX() METHOD
 EditAction 1476879213856 PlanetExplorer.java 2876 5 12 0
 RefactoringAction 1476879226289 PlanetExplorer.java REMOVE incrementX() METHOD
 EditAction 1476879229286 PlanetExplorer.java 2807 4 11 0
+CompilationAction 1476879230980 PlanetExplorer.java
+RefactoringAction 1476879235975 Position.java ADD void incrementX() METHOD
+EditAction 1476879244853 Position.java 467 8 8 0
