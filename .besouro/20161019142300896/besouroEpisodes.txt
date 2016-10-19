@@ -63,3 +63,7 @@
 1476881344534 test-addition 1 49 true
 1476881407046 test-addition 1 50 true
 1476881407047 test-addition 1 50 true
+1476881573234 test-addition 2 156 true
+1476881573235 test-addition 1 156 true
+1476881573236 test-addition 2 156 true
+1476881573237 test-addition 1 156 true

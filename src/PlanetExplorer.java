@@ -89,6 +89,14 @@ public class PlanetExplorer {
 					cursorPosition.incrementX();
 					if (checkObstacle(cursorPosition))
 						cursorPosition = tempPosition;
+				}else if (direction.equals("W")) {
+					cursorPosition.decrementX();
+					if (checkObstacle(cursorPosition))
+						cursorPosition = tempPosition;
+				}else if (direction.equals("S")) {
+					cursorPosition.decrementY();
+					if (checkObstacle(cursorPosition))
+						cursorPosition = tempPosition;
 				}
 
 			} else if (oneCommand == 'b') {
