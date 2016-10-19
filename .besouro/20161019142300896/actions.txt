@@ -51,3 +51,8 @@ RefactoringAction 1476877277803 PlanetExplorer.java ADD import java.util.List IM
 RefactoringAction 1476877292882 PlanetExplorer.java RENAME PlanetExplorer(int, int, String)=>int x FIELD
 RefactoringAction 1476877295932 PlanetExplorer.java ADD import java.util.ArrayList IMPORT
 EditAction 1476877297627 PlanetExplorer.java 1399 2 1 0
+FileOpenedAction 1476877330021 Position.java 230 4 4 0
+RefactoringAction 1476877339048 Position.java ADD Position() METHOD
+RefactoringAction 1476877342573 Position.java RENAME Position()=>Position(int) METHOD
+RefactoringAction 1476877345086 Position.java RENAME Position(int)=>Position(int, int) METHOD
+EditAction 1476877375762 Position.java 316 5 6 0
