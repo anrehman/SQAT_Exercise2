@@ -60,3 +60,10 @@ EditAction 1476877391639 PlanetExplorer.java 1474 2 2 0
 UnitTestCaseAction 1476877408766 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476877408768 TestPlanetExplorer.java FAIL
 EditAction 1476877444627 TestPlanetExplorer.java 282 1 2 1
+UnitTestCaseAction 1476877448788 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476877448789 TestPlanetExplorer.java OK
+RefactoringAction 1476877468789 TestPlanetExplorer.java ADD void test_planetExplorer_setObject()/2 METHOD
+RefactoringAction 1476877472804 TestPlanetExplorer.java RENAME test_planetExplorer_setObject()/2=>void test_planetExplorer_setObjectCheck() METHOD
+RefactoringAction 1476877473817 TestPlanetExplorer.java RENAME test_planetExplorer_setObjectCheck()=>void test_planetExplorer_setObjectCheckX() METHOD
+RefactoringAction 1476877478333 TestPlanetExplorer.java RENAME test_planetExplorer_setObject()=>void test_planetExplorer_setObjectCheckY() METHOD
+EditAction 1476877482665 TestPlanetExplorer.java 480 2 4 2
