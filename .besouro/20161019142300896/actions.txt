@@ -132,3 +132,6 @@ RefactoringAction 1476878962581 TestPlanetExplorer.java RENAME test_planetExplor
 RefactoringAction 1476878966094 TestPlanetExplorer.java RENAME test_planetExplorer_moveRight()=>void test_planetExplorer_moveRightAn() METHOD
 RefactoringAction 1476878970607 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAn()=>void test_planetExplorer_moveRightAndForward() METHOD
 EditAction 1476879024016 TestPlanetExplorer.java 1101 5 10 5
+UnitTestCaseAction 1476879027217 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476879027217 TestPlanetExplorer.java FAIL
+EditAction 1476879114239 PlanetExplorer.java 2728 4 11 0

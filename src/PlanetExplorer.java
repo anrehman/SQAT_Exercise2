@@ -78,6 +78,9 @@ public class PlanetExplorer {
 			if (oneCommand == 'f')
 				if (direction.equals("N"))
 					cursorPosition.incrementY();
+			else if(oneCommand == 'r')
+				if (direction.equals("N"))
+					direction = "E";
 
 		}
 		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")";
