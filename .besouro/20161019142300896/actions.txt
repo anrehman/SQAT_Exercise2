@@ -162,3 +162,9 @@ UnitTestCaseAction 1476879389048 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476879389049 TestPlanetExplorer.java FAIL
 EditAction 1476879507198 PlanetExplorer.java 3243 4 11 0
 EditAction 1476879563838 PlanetExplorer.java 3243 4 11 0
+UnitTestCaseAction 1476879566295 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476879566296 TestPlanetExplorer.java OK
+RefactoringAction 1476879614821 TestPlanetExplorer.java ADD void test_planetExplorer_moveRightAndForward()/2 METHOD
+RefactoringAction 1476879623334 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAndForward()/2=>void test_planetExplorer_moveRightForward() METHOD
+RefactoringAction 1476879629346 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightForward()=>void test_planetExplorer_moveRightForwardBackward() METHOD
+EditAction 1476879639122 TestPlanetExplorer.java 1533 7 14 7

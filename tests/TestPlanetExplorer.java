@@ -39,4 +39,10 @@ public class TestPlanetExplorer {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
 		assertEquals("(1,1,N)", planetExplorer.executeCommand("rflf"));		
 	}
+	
+	@Test
+	public void test_planetExplorer_moveRightForwardBackward() {
+		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
+		assertEquals("(0,0,E)", planetExplorer.executeCommand("rfb"));		
+	}
 }
