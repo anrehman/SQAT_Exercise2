@@ -57,3 +57,6 @@ RefactoringAction 1476877342573 Position.java RENAME Position()=>Position(int) M
 RefactoringAction 1476877345086 Position.java RENAME Position(int)=>Position(int, int) METHOD
 EditAction 1476877375762 Position.java 316 5 6 0
 EditAction 1476877391639 PlanetExplorer.java 1474 2 2 0
+UnitTestCaseAction 1476877408766 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476877408768 TestPlanetExplorer.java FAIL
+EditAction 1476877444627 TestPlanetExplorer.java 282 1 2 1
