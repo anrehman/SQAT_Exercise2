@@ -19,3 +19,21 @@ RefactoringAction 1476877018938 TestPlanetExplorer.java REMOVE test_executeComma
 UnitTestCaseAction 1476877022920 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476877022921 TestPlanetExplorer.java OK
 EditAction 1476877047641 TestPlanetExplorer.java 239 1 2 0
+UnitTestCaseAction 1476877050233 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476877050234 TestPlanetExplorer.java FAIL
+RefactoringAction 1476877126701 PlanetExplorer.java ADD int gr FIELD
+RefactoringAction 1476877128718 PlanetExplorer.java RENAME gr=>int grid FIELD
+RefactoringAction 1476877132234 PlanetExplorer.java RENAME grid=>int grid_ FIELD
+RefactoringAction 1476877133751 PlanetExplorer.java RENAME grid_=>int grid FIELD
+RefactoringAction 1476877135769 PlanetExplorer.java RENAME grid=>int gridLength FIELD
+RefactoringAction 1476877147348 PlanetExplorer.java ADD int grid FIELD
+RefactoringAction 1476877150864 PlanetExplorer.java RENAME grid=>int gridHeight FIELD
+RefactoringAction 1476877187376 Position.java ADD Position.java CLASS
+FileOpenedAction 1476877187485 Position.java 32 0 0 0
+RefactoringAction 1476877194502 Position.java ADD int x FIELD
+RefactoringAction 1476877198010 Position.java ADD int y FIELD
+RefactoringAction 1476877210535 Position.java ADD int getX() METHOD
+RefactoringAction 1476877210537 Position.java ADD void setX(int) METHOD
+RefactoringAction 1476877210538 Position.java ADD int getY() METHOD
+RefactoringAction 1476877210540 Position.java ADD void setY(int) METHOD
+EditAction 1476877215665 Position.java 230 4 4 0
