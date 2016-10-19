@@ -79,7 +79,7 @@ public class PlanetExplorer {
 				if (direction.equals("N"))
 					cursorPosition.incrementY();
 				else if (direction.equals("E"))
-					incrementX();
+					cursorPosition.incrementX();
 			} else if (oneCommand == 'r') {
 				if (direction.equals("N"))
 					direction = "E";
@@ -88,9 +88,4 @@ public class PlanetExplorer {
 		}
 		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")";
 	}
-
-	private void incrementX() {
-		cursorPosition.setX(cursorPosition.getX() + 1);
-	}
-
 }
