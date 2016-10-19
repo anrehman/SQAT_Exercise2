@@ -59,7 +59,7 @@ public class PlanetExplorer {
 		return true;
 	}
 
-	public String executeCommand(String command) {
+	public String executeCommand(String command) throws PlanetExplorerException {
 
 		/*
 		 * The command string is composed of "f" (forward), "b" (backward), "l"
@@ -79,45 +79,12 @@ public class PlanetExplorer {
 
 		for (char oneCommand : charArrayofCommands) {
 			tempPosition = new Position(cursorPosition.getX(), cursorPosition.getY());
-
 			if (oneCommand == 'f') {
-				if (direction.equals("N")) {
-					cursorPosition.incrementY();
-					if (checkObstacle(cursorPosition))
-						cursorPosition = tempPosition;
-				} else if (direction.equals("E")) {
-					cursorPosition.incrementX();
-					if (checkObstacle(cursorPosition))
-						cursorPosition = tempPosition;
-				}else if (direction.equals("W")) {
-					cursorPosition.decrementX();
-					if (checkObstacle(cursorPosition))
-						cursorPosition = tempPosition;
-				}else if (direction.equals("S")) {
-					cursorPosition.decrementY();
-					if (checkObstacle(cursorPosition))
-						cursorPosition = tempPosition;
-				}
-
+				moveForward(tempPosition);
 			} else if (oneCommand == 'b') {
-				if (direction.equals("N")) {
-					cursorPosition.decrementY();
-					if (checkObstacle(cursorPosition))
-						cursorPosition = tempPosition;
-				} else if (direction.equals("E")) {
-					cursorPosition.decrementX();
-					if (checkObstacle(cursorPosition))
-						cursorPosition = tempPosition;
-				}
+				moveBackward(tempPosition);
 			} else if (oneCommand == 'r') {
-				if (direction.equals("N"))
-					direction = "E";
-				else if (direction.equals("E"))
-					direction = "S";
-				else if (direction.equals("S"))
-					direction = "W";
-				else if (direction.equals("W"))
-					direction = "N";
+				moveRight();
 			} else if (oneCommand == 'l') {
 				moveLeft();
 			}
@@ -125,6 +92,54 @@ public class PlanetExplorer {
 		}
 		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")"
 				+ obstacleArrayToString();
+	}
+
+	private void moveForward(Position tempPosition) throws PlanetExplorerException {
+		if (direction.equals("N")) {
+			cursorPosition.incrementY();
+			checkAndChangePosition(tempPosition);
+		} else if (direction.equals("E")) {
+			cursorPosition.incrementX();
+			checkAndChangePosition(tempPosition);
+		} else if (direction.equals("W")) {
+			cursorPosition.decrementX();
+			checkAndChangePosition(tempPosition);
+		} else if (direction.equals("S")) {
+			cursorPosition.decrementY();
+			checkAndChangePosition(tempPosition);
+		}
+	}
+
+	private void checkAndChangePosition(Position tempPosition) {
+		if (checkObstacle(cursorPosition))
+			cursorPosition = tempPosition;
+	}
+
+	private void moveBackward(Position tempPosition) throws PlanetExplorerException {
+		if (direction.equals("N")) {
+			cursorPosition.decrementY();
+			checkAndChangePosition(tempPosition);
+		} else if (direction.equals("E")) {
+			cursorPosition.decrementX();
+			checkAndChangePosition(tempPosition);
+		} else if (direction.equals("W")) {
+			cursorPosition.incrementX();
+			checkAndChangePosition(tempPosition);
+		} else if (direction.equals("S")) {
+			cursorPosition.incrementY();
+			checkAndChangePosition(tempPosition);
+		}
+	}
+
+	private void moveRight() {
+		if (direction.equals("N"))
+			direction = "E";
+		else if (direction.equals("E"))
+			direction = "S";
+		else if (direction.equals("S"))
+			direction = "W";
+		else if (direction.equals("W"))
+			direction = "N";
 	}
 
 	private void moveLeft() {

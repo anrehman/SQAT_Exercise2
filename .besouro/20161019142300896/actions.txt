@@ -264,3 +264,18 @@ EditAction 1476881785642 TestPlanetExplorer.java 2683 12 24 11
 UnitTestCaseAction 1476881801786 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476881801787 TestPlanetExplorer.java FAIL
 EditAction 1476881900193 Position.java 1073 12 14 0
+CompilationAction 1476881901673 PlanetExplorer.java
+CompilationAction 1476881972280 PlanetExplorer.java
+CompilationAction 1476881972478 TestPlanetExplorer.java
+CompilationAction 1476882011473 TestPlanetExplorer.java
+RefactoringAction 1476882028798 PlanetExplorer.java ADD void moveRight() METHOD
+RefactoringAction 1476882041320 PlanetExplorer.java ADD void moveBackward(Position) METHOD
+RefactoringAction 1476882053842 PlanetExplorer.java ADD void moveForward(Position) METHOD
+RefactoringAction 1476882095400 PlanetExplorer.java ADD void checkAndChangePosition(Position) METHOD
+UnitTestCaseAction 1476882123946 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476882123947 TestPlanetExplorer.java OK
+RefactoringAction 1476882255905 TestPlanetExplorer.java ADD void test_planetExplorer_moveRightBackward()/2 METHOD
+RefactoringAction 1476882277472 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightBackward()/2=>void test_planetExplorer_moveOut() METHOD
+RefactoringAction 1476882282486 TestPlanetExplorer.java RENAME test_planetExplorer_moveOut()=>void test_planetExplorer_moveOutofBoundary() METHOD
+RefactoringAction 1476882286999 TestPlanetExplorer.java RENAME test_planetExplorer_moveOutofBoundary()=>void test_planetExplorer_moveOutofBoundaryException() METHOD
+EditAction 1476882300805 TestPlanetExplorer.java 3224 13 26 11
