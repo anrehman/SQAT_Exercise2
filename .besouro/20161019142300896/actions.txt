@@ -259,3 +259,5 @@ UnitTestSessionAction 1476881573234 TestPlanetExplorer.java OK
 RefactoringAction 1476881581053 TestPlanetExplorer.java ADD void test_planetExplorer_moveRightForwardLeftForwardLeftForward()/2 METHOD
 RefactoringAction 1476881722580 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightForwardLeftForwardLeftForward()/2=>void test_planetExplorer_moveRightBackward() METHOD
 EditAction 1476881729672 TestPlanetExplorer.java 2668 12 24 12
+FileOpenedAction 1476881740456 SpreadsheetTest.java 4341 18 57 10
+EditAction 1476881785642 TestPlanetExplorer.java 2683 12 24 11
