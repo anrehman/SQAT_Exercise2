@@ -76,3 +76,7 @@ UnitTestCaseAction 1476877532383 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476877532384 TestPlanetExplorer.java FAIL
 RefactoringAction 1476877851254 Position.java ADD Position() METHOD
 EditAction 1476877856800 Position.java 346 6 6 0
+FileOpenedAction 1476877882070 Spreadsheet.java 4457 8 20 0
+RefactoringAction 1476877893359 PlanetExplorer.java ADD static boolean isInteger(String) METHOD
+RefactoringAction 1476878038995 PlanetExplorer.java RENAME obstacles=>List<Position> obstaclesArray FIELD
+EditAction 1476878103069 PlanetExplorer.java 2186 3 8 0

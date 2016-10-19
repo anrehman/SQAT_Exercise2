@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PlanetExplorer {
 	Position gridSize;
-	List<Position> obstacles = new ArrayList<Position>();
+	List<Position> obstaclesArray = new ArrayList<Position>();
 
 	public PlanetExplorer(int x, int y, String obstacles) {
 		/*
@@ -22,7 +22,34 @@ public class PlanetExplorer {
 		 * 
 		 */
 		gridSize = new Position(x, y);
+		boolean positionXFilled = false;
+		char[] charArray = obstacles.toCharArray();
+		Position temp = new Position();
+		for (int loop = 0; loop < charArray.length; loop++) {
+			if (isInteger("" + charArray[loop])) {
+				if (positionXFilled) {
+					positionXFilled = false;
+					temp.setY(Integer.parseInt("" + charArray[loop]));
+					obstaclesArray.add(temp);
+				} else {
+					temp = new Position();
+					positionXFilled = true;
+					temp.setX(Integer.parseInt("" + charArray[loop]));
+				}
+			}
+		}
 
+	}
+
+	public static boolean isInteger(String s) {
+		try {
+			Integer.parseInt(s);
+		} catch (NumberFormatException e) {
+			return false;
+		} catch (NullPointerException e) {
+			return false;
+		}
+		return true;
 	}
 
 	public String executeCommand(String command) {
