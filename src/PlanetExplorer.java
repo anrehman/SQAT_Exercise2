@@ -76,10 +76,12 @@ public class PlanetExplorer {
 		char[] charArrayofCommands = command.toCharArray();
 		for (char oneCommand : charArrayofCommands) {
 			if (oneCommand == 'f') {
-				if (direction.equals("N"))
-					cursorPosition.incrementY();
-				else if (direction.equals("E"))
+				if (direction.equals("N")) {
+					if (!checkObstacle())
+						cursorPosition.incrementY();
+				} else if (direction.equals("E"))
 					cursorPosition.incrementX();
+
 			} else if (oneCommand == 'b') {
 				if (direction.equals("N"))
 					cursorPosition.decrementY();
