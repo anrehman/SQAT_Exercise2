@@ -79,14 +79,19 @@ public class PlanetExplorer {
 				if (direction.equals("N")) {
 					if (!checkObstacle())
 						cursorPosition.incrementY();
-				} else if (direction.equals("E"))
-					cursorPosition.incrementX();
+				} else if (direction.equals("E")) {
+					if (!checkObstacle())
+						cursorPosition.incrementX();
+				}
 
 			} else if (oneCommand == 'b') {
 				if (direction.equals("N"))
-					cursorPosition.decrementY();
-				else if (direction.equals("E"))
-					cursorPosition.decrementX();
+					if (!checkObstacle()) {
+						cursorPosition.decrementY();
+					} else if (direction.equals("E"))
+						if (!checkObstacle()) {
+							cursorPosition.decrementX();
+						}
 			} else if (oneCommand == 'r') {
 				if (direction.equals("N"))
 					direction = "E";
@@ -109,5 +114,10 @@ public class PlanetExplorer {
 
 		}
 		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")";
+	}
+
+	private boolean checkObstacle() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

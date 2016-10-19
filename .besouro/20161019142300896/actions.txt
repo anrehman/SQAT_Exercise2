@@ -190,3 +190,6 @@ EditAction 1476879866120 TestPlanetExplorer.java 1771 8 16 8
 UnitTestCaseAction 1476879868015 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476879868016 TestPlanetExplorer.java FAIL
 EditAction 1476879973338 PlanetExplorer.java 3446 4 11 0
+CompilationAction 1476879974971 PlanetExplorer.java
+RefactoringAction 1476879981370 PlanetExplorer.java ADD boolean checkObstacle() METHOD
+EditAction 1476880026009 PlanetExplorer.java 3647 5 12 0
