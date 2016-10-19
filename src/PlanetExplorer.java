@@ -83,6 +83,21 @@ public class PlanetExplorer {
 			} else if (oneCommand == 'r') {
 				if (direction.equals("N"))
 					direction = "E";
+				else if (direction.equals("E"))
+					direction = "S";
+				else if (direction.equals("S"))
+					direction = "W";
+				else if (direction.equals("W"))
+					direction = "N";
+			} else if (oneCommand == 'l') {
+				if (direction.equals("N"))
+					direction = "W";
+				else if (direction.equals("E"))
+					direction = "N";
+				else if (direction.equals("W"))
+					direction = "S";
+				else if (direction.equals("S"))
+					direction = "E";
 			}
 
 		}
