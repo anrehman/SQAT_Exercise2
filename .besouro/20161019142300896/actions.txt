@@ -37,3 +37,17 @@ RefactoringAction 1476877210537 Position.java ADD void setX(int) METHOD
 RefactoringAction 1476877210538 Position.java ADD int getY() METHOD
 RefactoringAction 1476877210540 Position.java ADD void setY(int) METHOD
 EditAction 1476877215665 Position.java 230 4 4 0
+RefactoringAction 1476877230978 PlanetExplorer.java REMOVE gridHeight FIELD
+RefactoringAction 1476877230980 PlanetExplorer.java REMOVE gridLength FIELD
+RefactoringAction 1476877234509 PlanetExplorer.java ADD Position Size FIELD
+RefactoringAction 1476877236025 PlanetExplorer.java REMOVE Size FIELD
+RefactoringAction 1476877240540 PlanetExplorer.java ADD Position grid FIELD
+RefactoringAction 1476877242054 PlanetExplorer.java RENAME grid=>Position gridSize FIELD
+RefactoringAction 1476877263719 PlanetExplorer.java ADD List<Position> obs FIELD
+RefactoringAction 1476877265737 PlanetExplorer.java RENAME obs=>List<Position> obsta FIELD
+RefactoringAction 1476877267754 PlanetExplorer.java RENAME obsta=>List<Position> obstacles FIELD
+RefactoringAction 1476877270283 PlanetExplorer.java RENAME PlanetExplorer(int, int, String)=>int x FIELD
+RefactoringAction 1476877277803 PlanetExplorer.java ADD import java.util.List IMPORT
+RefactoringAction 1476877292882 PlanetExplorer.java RENAME PlanetExplorer(int, int, String)=>int x FIELD
+RefactoringAction 1476877295932 PlanetExplorer.java ADD import java.util.ArrayList IMPORT
+EditAction 1476877297627 PlanetExplorer.java 1399 2 1 0
