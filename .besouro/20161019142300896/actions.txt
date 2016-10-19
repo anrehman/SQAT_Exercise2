@@ -180,3 +180,9 @@ EditAction 1476879734638 PlanetExplorer.java 3413 4 11 0
 UnitTestCaseAction 1476879741929 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476879741930 TestPlanetExplorer.java OK
 EditAction 1476879769263 TestPlanetExplorer.java 1533 7 14 7
+UnitTestCaseAction 1476879772335 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476879772336 TestPlanetExplorer.java OK
+RefactoringAction 1476879787941 TestPlanetExplorer.java ADD void test_planetExplorer_moveRightForwardBackward()/2 METHOD
+RefactoringAction 1476879805954 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightForwardBackward()/2=>void test_planetExplorer_moveRightForwardLeftForward()/2 METHOD
+RefactoringAction 1476879812466 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightForwardLeftForward()/2=>void test_planetExplorer_moveRightForwardLeftForwardObstacleFound() METHOD
+EditAction 1476879853668 TestPlanetExplorer.java 1766 8 16 8

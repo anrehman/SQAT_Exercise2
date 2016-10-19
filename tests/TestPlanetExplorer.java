@@ -45,4 +45,11 @@ public class TestPlanetExplorer {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
 		assertEquals("(0,0,E)", planetExplorer.executeCommand("rfb"));		
 	}
+	
+	@Test
+	public void test_planetExplorer_moveRightForwardLeftForwardObstacleFound() {
+		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
+		assertEquals("(1,0,N)", planetExplorer.executeCommand("rflf"));		
+	}
+	
 }
