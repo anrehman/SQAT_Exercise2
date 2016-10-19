@@ -72,3 +72,7 @@ UnitTestSessionAction 1476877485032 TestPlanetExplorer.java OK
 RefactoringAction 1476877503878 TestPlanetExplorer.java ADD void test_planetExplorer_setObjectCheckY()/2 METHOD
 RefactoringAction 1476877510892 TestPlanetExplorer.java RENAME test_planetExplorer_setObjectCheckY()/2=>void test_planetExplorer_setObjectCheckObstacles() METHOD
 EditAction 1476877529674 TestPlanetExplorer.java 680 3 6 3
+UnitTestCaseAction 1476877532383 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476877532384 TestPlanetExplorer.java FAIL
+RefactoringAction 1476877851254 Position.java ADD Position() METHOD
+EditAction 1476877856800 Position.java 346 6 6 0
