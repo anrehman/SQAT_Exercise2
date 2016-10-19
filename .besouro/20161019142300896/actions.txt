@@ -148,3 +148,13 @@ EditAction 1476879229286 PlanetExplorer.java 2807 4 11 0
 CompilationAction 1476879230980 PlanetExplorer.java
 RefactoringAction 1476879235975 Position.java ADD void incrementX() METHOD
 EditAction 1476879244853 Position.java 467 8 8 0
+CompilationAction 1476879246336 PlanetExplorer.java
+UnitTestCaseAction 1476879261480 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476879261481 TestPlanetExplorer.java OK
+RefactoringAction 1476879285185 TestPlanetExplorer.java ADD void test_planetExplorer_moveRightAndForward()/2 METHOD
+RefactoringAction 1476879338202 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAndForward()/2=>void test_planetExplorer_moveRightAndForwardLw() METHOD
+RefactoringAction 1476879340714 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAndForwardLw()=>void test_planetExplorer_moveRightAndForwardLe() METHOD
+RefactoringAction 1476879341725 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAndForwardLe()=>void test_planetExplorer_moveRightAndForwardLeft() METHOD
+RefactoringAction 1476879345238 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAndForwardLeft()=>void test_planetExplorer_moveRightAndForwardLeftForward() METHOD
+RefactoringAction 1476879348251 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAndForwardLeftForward()=>void test_planetExplorer_moveRightForwardLeftForward() METHOD
+EditAction 1476879387184 TestPlanetExplorer.java 1319 6 12 6
