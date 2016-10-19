@@ -214,3 +214,6 @@ RefactoringAction 1476880573501 PlanetExplorer.java ADD List<Position> obstacles
 RefactoringAction 1476880578019 PlanetExplorer.java RENAME obstaclesArray/2=>List<Position> foundobstaclesArray FIELD
 RefactoringAction 1476880579038 PlanetExplorer.java RENAME foundobstaclesArray=>List<Position> foundObstaclesArray FIELD
 EditAction 1476880594870 PlanetExplorer.java 4093 5 14 0
+RefactoringAction 1476880619331 PlanetExplorer.java ADD String obstacleArrayToString() METHOD
+RefactoringAction 1476880640710 Position.java ADD String toString() METHOD
+EditAction 1476880690986 Position.java 883 12 14 0
