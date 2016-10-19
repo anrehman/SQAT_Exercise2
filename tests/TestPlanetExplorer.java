@@ -21,4 +21,11 @@ public class TestPlanetExplorer {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
 		assertEquals(1, planetExplorer.obstaclesArray.size());		
 	}
+	
+	@Test
+	public void test_planetExplorer_moveForward() {
+		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
+		
+		assertEquals("(0,1,N)", planetExplorer.executeCommand("f"));		
+	}
 }

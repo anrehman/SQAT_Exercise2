@@ -88,3 +88,9 @@ UnitTestCaseAction 1476878123762 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476878123763 TestPlanetExplorer.java OK
 RefactoringAction 1476878158964 PlanetExplorer.java ADD void convertStringToObstacleArray(String) METHOD
 EditAction 1476878158975 PlanetExplorer.java 2296 4 9 0
+UnitTestCaseAction 1476878167640 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878167641 TestPlanetExplorer.java OK
+RefactoringAction 1476878217587 TestPlanetExplorer.java ADD void test_planetExplorer_setObjectCheckObstacles()/2 METHOD
+RefactoringAction 1476878229104 TestPlanetExplorer.java RENAME test_planetExplorer_setObjectCheckObstacles()/2=>void test_planetExplorer_move() METHOD
+RefactoringAction 1476878232118 TestPlanetExplorer.java RENAME test_planetExplorer_move()=>void test_planetExplorer_moveForward() METHOD
+EditAction 1476878376993 TestPlanetExplorer.java 887 4 8 4
