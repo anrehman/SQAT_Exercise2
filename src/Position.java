@@ -28,12 +28,18 @@ public class Position {
 		this.y = y;
 	}
 
-	public void incrementY() {
-		this.y = (this.y + 1);
+	public void incrementY(Position gridSize) throws PlanetExplorerException {
+		if (y < gridSize.getY())
+			this.y = (this.y + 1);
+		else
+			throw new PlanetExplorerException();
 	}
 
-	public void incrementX() {
-		this.x = (this.x + 1);
+	public void incrementX(Position gridSize) throws PlanetExplorerException {
+		if (x < gridSize.getX())
+			this.x = (this.x + 1);
+		else
+			throw new PlanetExplorerException();
 	}
 
 	public void decrementY() throws PlanetExplorerException {

@@ -279,3 +279,8 @@ RefactoringAction 1476882277472 TestPlanetExplorer.java RENAME test_planetExplor
 RefactoringAction 1476882282486 TestPlanetExplorer.java RENAME test_planetExplorer_moveOut()=>void test_planetExplorer_moveOutofBoundary() METHOD
 RefactoringAction 1476882286999 TestPlanetExplorer.java RENAME test_planetExplorer_moveOutofBoundary()=>void test_planetExplorer_moveOutofBoundaryException() METHOD
 EditAction 1476882300805 TestPlanetExplorer.java 3224 13 26 11
+UnitTestCaseAction 1476882305113 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476882305114 TestPlanetExplorer.java FAIL
+RefactoringAction 1476882349058 Position.java RENAME incrementY()=>void incrementY(Position) METHOD
+RefactoringAction 1476882401844 Position.java RENAME incrementX()=>void incrementX(Position) METHOD
+EditAction 1476882415974 Position.java 1325 12 14 0
