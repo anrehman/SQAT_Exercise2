@@ -78,7 +78,7 @@ public class TestPlanetExplorer {
 	
 	@Test (expected = PlanetExplorerException.class)
 	public void test_planetExplorer_moveOutofBoundaryException() throws PlanetExplorerException {
-		PlanetExplorer planetExplorer = new PlanetExplorer(2, 2, "(0,1)");
+		PlanetExplorer planetExplorer = new PlanetExplorer(2, 2, "(2,2)");
 		 planetExplorer.executeCommand("ffff");		
 	}
 }
