@@ -22,6 +22,11 @@ public class PlanetExplorer {
 		 * 
 		 */
 		gridSize = new Position(x, y);
+		convertStringToObstacleArray(obstacles);
+
+	}
+
+	private void convertStringToObstacleArray(String obstacles) {
 		boolean positionXFilled = false;
 		char[] charArray = obstacles.toCharArray();
 		Position temp = new Position();
@@ -38,7 +43,6 @@ public class PlanetExplorer {
 				}
 			}
 		}
-
 	}
 
 	public static boolean isInteger(String s) {

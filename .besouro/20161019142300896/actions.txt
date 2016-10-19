@@ -80,3 +80,11 @@ FileOpenedAction 1476877882070 Spreadsheet.java 4457 8 20 0
 RefactoringAction 1476877893359 PlanetExplorer.java ADD static boolean isInteger(String) METHOD
 RefactoringAction 1476878038995 PlanetExplorer.java RENAME obstacles=>List<Position> obstaclesArray FIELD
 EditAction 1476878103069 PlanetExplorer.java 2186 3 8 0
+CompilationAction 1476878104604 TestPlanetExplorer.java
+UnitTestCaseAction 1476878112031 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476878112032 TestPlanetExplorer.java FAIL
+CompilationAction 1476878123373 TestPlanetExplorer.java
+UnitTestCaseAction 1476878123762 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878123763 TestPlanetExplorer.java OK
+RefactoringAction 1476878158964 PlanetExplorer.java ADD void convertStringToObstacleArray(String) METHOD
+EditAction 1476878158975 PlanetExplorer.java 2296 4 9 0

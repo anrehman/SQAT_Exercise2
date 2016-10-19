@@ -19,6 +19,6 @@ public class TestPlanetExplorer {
 	@Test
 	public void test_planetExplorer_setObjectCheckObstacles() {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
-		assertEquals(1, planetExplorer.obstacles.size());		
+		assertEquals(1, planetExplorer.obstaclesArray.size());		
 	}
 }
