@@ -122,7 +122,16 @@ public class PlanetExplorer {
 			}
 
 		}
-		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")";
+		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")"
+				+ obstacleArrayToString();
+	}
+
+	private String obstacleArrayToString() {
+		String result = "";
+		for (Position oneObstacle : foundObstaclesArray) {
+			result = result + oneObstacle.toString();
+		}
+		return result;
 	}
 
 	private boolean checkObstacle(Position newPosition) {
