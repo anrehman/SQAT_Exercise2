@@ -111,3 +111,7 @@ UnitTestCaseAction 1476878772022 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476878772023 TestPlanetExplorer.java OK
 RefactoringAction 1476878797457 TestPlanetExplorer.java RENAME test_planetExplorer_moveForward()=>void test_planetExplorer_moveForwardFromStart() METHOD
 EditAction 1476878798343 TestPlanetExplorer.java 893 4 8 4
+UnitTestCaseAction 1476878801269 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878801270 TestPlanetExplorer.test_planetExplorer_moveForwardFromStart OK
+RefactoringAction 1476878842316 PlanetExplorer.java ADD void incrementY() METHOD
+EditAction 1476878842325 PlanetExplorer.java 2710 5 12 0

@@ -77,9 +77,13 @@ public class PlanetExplorer {
 		for (char oneCommand : charArrayofCommands) {
 			if (oneCommand == 'f')
 				if (direction.equals("N"))
-					cursorPosition.setY(cursorPosition.getY() + 1);
+					incrementY();
 
 		}
 		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")";
+	}
+
+	private void incrementY() {
+		cursorPosition.setY(cursorPosition.getY() + 1);
 	}
 }
