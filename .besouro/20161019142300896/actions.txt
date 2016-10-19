@@ -115,3 +115,6 @@ UnitTestCaseAction 1476878801269 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476878801270 TestPlanetExplorer.test_planetExplorer_moveForwardFromStart OK
 RefactoringAction 1476878842316 PlanetExplorer.java ADD void incrementY() METHOD
 EditAction 1476878842325 PlanetExplorer.java 2710 5 12 0
+RefactoringAction 1476878865815 PlanetExplorer.java REMOVE incrementY() METHOD
+RefactoringAction 1476878869861 Position.java ADD void incrementY() METHOD
+EditAction 1476878897211 Position.java 408 7 7 0

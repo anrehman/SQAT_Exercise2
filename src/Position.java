@@ -28,4 +28,8 @@ public class Position {
 		this.y = y;
 	}
 
+	private void incrementY() {
+		this.y = (this.y + 1);
+	}
+
 }
