@@ -80,6 +80,11 @@ public class PlanetExplorer {
 					cursorPosition.incrementY();
 				else if (direction.equals("E"))
 					cursorPosition.incrementX();
+			} else if (oneCommand == 'b') {
+				if (direction.equals("N"))
+					cursorPosition.decrementY();
+				else if (direction.equals("E"))
+					cursorPosition.decrementX();
 			} else if (oneCommand == 'r') {
 				if (direction.equals("N"))
 					direction = "E";
