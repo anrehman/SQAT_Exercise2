@@ -36,12 +36,18 @@ public class Position {
 		this.x = (this.x + 1);
 	}
 
-	public void decrementY() {
-		this.y = (this.y - 1);
+	public void decrementY() throws PlanetExplorerException {
+		if (y > 0)
+			this.y = (this.y - 1);
+		else
+			throw new PlanetExplorerException();
 	}
 
-	public void decrementX() {
-		this.x = (this.x - 1);
+	public void decrementX() throws PlanetExplorerException {
+		if (x > 0)
+			this.x = (this.x - 1);
+		else
+			throw new PlanetExplorerException();
 	}
 
 	@Override

@@ -261,3 +261,6 @@ RefactoringAction 1476881722580 TestPlanetExplorer.java RENAME test_planetExplor
 EditAction 1476881729672 TestPlanetExplorer.java 2668 12 24 12
 FileOpenedAction 1476881740456 SpreadsheetTest.java 4341 18 57 10
 EditAction 1476881785642 TestPlanetExplorer.java 2683 12 24 11
+UnitTestCaseAction 1476881801786 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476881801787 TestPlanetExplorer.java FAIL
+EditAction 1476881900193 Position.java 1073 12 14 0
