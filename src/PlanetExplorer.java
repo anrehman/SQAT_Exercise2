@@ -10,6 +10,7 @@ public class PlanetExplorer {
 	List<Position> obstaclesArray = new ArrayList<Position>();
 	Position cursorPosition = new Position(0, 0);
 	String direction = "N";
+	List<Position> foundObstaclesArray = new ArrayList<Position>();
 
 	public PlanetExplorer(int x, int y, String obstacles) {
 		/*
@@ -127,6 +128,7 @@ public class PlanetExplorer {
 	private boolean checkObstacle(Position newPosition) {
 		for (Position oneObstacle : obstaclesArray) {
 			if (oneObstacle.equals(newPosition)) {
+				foundObstaclesArray.add(oneObstacle);
 				return true;
 			}
 		}

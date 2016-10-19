@@ -207,3 +207,10 @@ RefactoringAction 1476880411762 Position.java RENAME e=>boolean eq FIELD
 RefactoringAction 1476880414771 Position.java RENAME eq=>boolean equals() METHOD
 RefactoringAction 1476880422791 Position.java RENAME equals()=>boolean equals(Position) METHOD
 EditAction 1476880429608 Position.java 656 11 10 0
+CompilationAction 1476880431349 Position.java
+RefactoringAction 1476880446325 Position.java ADD boolean equals(Object) METHOD
+RefactoringAction 1476880450839 Position.java REMOVE equals(Position) METHOD
+RefactoringAction 1476880573501 PlanetExplorer.java ADD List<Position> obstaclesArray/2 FIELD
+RefactoringAction 1476880578019 PlanetExplorer.java RENAME obstaclesArray/2=>List<Position> foundobstaclesArray FIELD
+RefactoringAction 1476880579038 PlanetExplorer.java RENAME foundobstaclesArray=>List<Position> foundObstaclesArray FIELD
+EditAction 1476880594870 PlanetExplorer.java 4093 5 14 0

@@ -45,7 +45,11 @@ public class Position {
 	}
 
 	@Override
-	public boolean equals(Position onePosition) {
-
+	public boolean equals(Object obj) {
+		Position onePosition = (Position) obj;
+		if (onePosition.getX() == this.x && onePosition.getY() == this.y)
+			return true;
+		return false;
 	}
+
 }
