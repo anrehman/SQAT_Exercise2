@@ -8,6 +8,8 @@ import java.util.List;
 public class PlanetExplorer {
 	Position gridSize;
 	List<Position> obstaclesArray = new ArrayList<Position>();
+	Position cursorPosition = new Position(0, 0);
+	String direction = "N";
 
 	public PlanetExplorer(int x, int y, String obstacles) {
 		/*
@@ -72,9 +74,12 @@ public class PlanetExplorer {
 		 * obstacles. No white spaces.
 		 */
 		char[] charArrayofCommands = command.toCharArray();
-		for (char oneCommand: charArrayofCommands) {
-			
+		for (char oneCommand : charArrayofCommands) {
+			if (oneCommand == 'f')
+				if (direction.equals("N"))
+					cursorPosition.setY(cursorPosition.getY() + 1);
+
 		}
-		return null;
+		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")";
 	}
 }

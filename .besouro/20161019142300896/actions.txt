@@ -97,3 +97,13 @@ EditAction 1476878376993 TestPlanetExplorer.java 887 4 8 4
 UnitTestCaseAction 1476878381071 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476878381072 TestPlanetExplorer.java FAIL
 EditAction 1476878473669 PlanetExplorer.java 2404 4 11 0
+RefactoringAction 1476878544971 PlanetExplorer.java ADD Position cursor FIELD
+RefactoringAction 1476878547990 PlanetExplorer.java RENAME cursor=>Position cursorPosition FIELD
+RefactoringAction 1476878553545 PlanetExplorer.java RENAME PlanetExplorer(int, int, String)=>int x FIELD
+RefactoringAction 1476878557081 PlanetExplorer.java RENAME PlanetExplorer(int, int, String)=>int x FIELD
+RefactoringAction 1476878569150 PlanetExplorer.java REMOVE cursorPosition FIELD
+RefactoringAction 1476878578186 PlanetExplorer.java ADD Position cursorPosition FIELD
+RefactoringAction 1476878600724 PlanetExplorer.java ADD String direction FIELD
+CompilationAction 1476878613206 PlanetExplorer.java
+CompilationAction 1476878696331 PlanetExplorer.java
+EditAction 1476878767207 PlanetExplorer.java 2661 4 11 0
