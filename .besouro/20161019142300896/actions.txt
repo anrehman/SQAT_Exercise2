@@ -119,3 +119,16 @@ RefactoringAction 1476878865815 PlanetExplorer.java REMOVE incrementY() METHOD
 RefactoringAction 1476878869861 Position.java ADD void incrementY() METHOD
 EditAction 1476878897211 Position.java 408 7 7 0
 EditAction 1476878906074 PlanetExplorer.java 2645 4 11 0
+UnitTestCaseAction 1476878909033 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878909034 TestPlanetExplorer.test_planetExplorer_moveForwardFromStart OK
+RefactoringAction 1476878917996 TestPlanetExplorer.java ADD void test_planetExplorer_moveForwardFromStart()/2 METHOD
+RefactoringAction 1476878923509 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardFromStart()/2=>void test_planetExplorer_moveForwardFromS() METHOD
+RefactoringAction 1476878926020 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardFromS()=>void test_planetExplorer_moveForwardFromSouth() METHOD
+RefactoringAction 1476878931031 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardFromSouth()=>void test_planetExplorer_moveForwardFromSouthD() METHOD
+RefactoringAction 1476878932543 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardFromSouthD()=>void test_planetExplorer_moveForwardFromSouthDirec() METHOD
+RefactoringAction 1476878934556 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardFromSouthDirec()=>void test_planetExplorer_moveForwardFromSouthDirection() METHOD
+RefactoringAction 1476878961569 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardFromSouthDirection()=>void test_planetExplorer_moveRi() METHOD
+RefactoringAction 1476878962581 TestPlanetExplorer.java RENAME test_planetExplorer_moveRi()=>void test_planetExplorer_moveRight() METHOD
+RefactoringAction 1476878966094 TestPlanetExplorer.java RENAME test_planetExplorer_moveRight()=>void test_planetExplorer_moveRightAn() METHOD
+RefactoringAction 1476878970607 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAn()=>void test_planetExplorer_moveRightAndForward() METHOD
+EditAction 1476879024016 TestPlanetExplorer.java 1101 5 10 5
