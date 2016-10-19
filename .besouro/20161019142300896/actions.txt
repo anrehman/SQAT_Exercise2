@@ -314,3 +314,4 @@ CompilationAction 1476883239011 TestPlanetExplorer.java
 CompilationAction 1476883260090 TestPlanetExplorer.java
 UnitTestCaseAction 1476883260475 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476883260477 TestPlanetExplorer.java OK
+FileOpenedAction 1476883348851 PlanetExplorerException.java 61 0 0 0

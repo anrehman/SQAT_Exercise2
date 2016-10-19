@@ -81,4 +81,5 @@ public class TestPlanetExplorer {
 		PlanetExplorer planetExplorer = new PlanetExplorer(2, 2, "(2,2)");
 		 planetExplorer.executeCommand("ffff");		
 	}
+	
 }

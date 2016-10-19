@@ -71,6 +71,7 @@ public class PlanetExplorer {
 		} catch (NullPointerException e) {
 			return false;
 		}
+		
 		return true;
 	}
 
