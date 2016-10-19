@@ -193,3 +193,17 @@ EditAction 1476879973338 PlanetExplorer.java 3446 4 11 0
 CompilationAction 1476879974971 PlanetExplorer.java
 RefactoringAction 1476879981370 PlanetExplorer.java ADD boolean checkObstacle() METHOD
 EditAction 1476880026009 PlanetExplorer.java 3647 5 12 0
+RefactoringAction 1476880217337 PlanetExplorer.java RENAME checkObstacle()=>boolean checkObstacle(Object) METHOD
+RefactoringAction 1476880221895 PlanetExplorer.java RENAME checkObstacle(Object)=>boolean checkObstacle(Pos) METHOD
+RefactoringAction 1476880223913 PlanetExplorer.java RENAME checkObstacle(Pos)=>boolean checkObstacle(Position) METHOD
+CompilationAction 1476880248292 PlanetExplorer.java
+CompilationAction 1476880248294 PlanetExplorer.java
+CompilationAction 1476880313789 PlanetExplorer.java
+CompilationAction 1476880313791 PlanetExplorer.java
+CompilationAction 1476880313840 PlanetExplorer.java
+CompilationAction 1476880372349 PlanetExplorer.java
+RefactoringAction 1476880409755 Position.java ADD boolean e FIELD
+RefactoringAction 1476880411762 Position.java RENAME e=>boolean eq FIELD
+RefactoringAction 1476880414771 Position.java RENAME eq=>boolean equals() METHOD
+RefactoringAction 1476880422791 Position.java RENAME equals()=>boolean equals(Position) METHOD
+EditAction 1476880429608 Position.java 656 11 10 0

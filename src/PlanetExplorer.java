@@ -74,24 +74,32 @@ public class PlanetExplorer {
 		 * obstacles. No white spaces.
 		 */
 		char[] charArrayofCommands = command.toCharArray();
+		Position tempPosition;
+
 		for (char oneCommand : charArrayofCommands) {
+			tempPosition = cursorPosition;
+
 			if (oneCommand == 'f') {
 				if (direction.equals("N")) {
-					if (!checkObstacle())
-						cursorPosition.incrementY();
+					tempPosition.incrementY();
+					if (!checkObstacle(tempPosition))
+						cursorPosition = tempPosition;
 				} else if (direction.equals("E")) {
-					if (!checkObstacle())
-						cursorPosition.incrementX();
+					tempPosition.incrementX();
+					if (!checkObstacle(tempPosition))
+						cursorPosition = tempPosition;
 				}
 
 			} else if (oneCommand == 'b') {
-				if (direction.equals("N"))
-					if (!checkObstacle()) {
-						cursorPosition.decrementY();
-					} else if (direction.equals("E"))
-						if (!checkObstacle()) {
-							cursorPosition.decrementX();
-						}
+				if (direction.equals("N")) {
+					tempPosition.decrementY();
+					if (!checkObstacle(tempPosition))
+						cursorPosition = tempPosition;
+				} else if (direction.equals("E")) {
+					tempPosition.decrementX();
+					if (!checkObstacle(tempPosition))
+						cursorPosition = tempPosition;
+				}
 			} else if (oneCommand == 'r') {
 				if (direction.equals("N"))
 					direction = "E";
@@ -116,8 +124,12 @@ public class PlanetExplorer {
 		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")";
 	}
 
-	private boolean checkObstacle() {
-		// TODO Auto-generated method stub
+	private boolean checkObstacle(Position newPosition) {
+		for (Position oneObstacle : obstaclesArray) {
+			if (oneObstacle.equals(newPosition)) {
+				return true;
+			}
+		}
 		return false;
 	}
 }

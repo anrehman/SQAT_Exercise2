@@ -43,4 +43,9 @@ public class Position {
 	public void decrementX() {
 		this.x = (this.x - 1);
 	}
+
+	@Override
+	public boolean equals(Position onePosition) {
+
+	}
 }
