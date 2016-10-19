@@ -292,3 +292,25 @@ EditAction 1476882474493 TestPlanetExplorer.java 3225 13 26 11
 UnitTestCaseAction 1476882477458 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476882477460 TestPlanetExplorer.java FAIL
 EditAction 1476882753547 TestPlanetExplorer.java 3225 13 26 11
+UnitTestCaseAction 1476882756674 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476882756675 TestPlanetExplorer.java OK
+RefactoringAction 1476882827135 PlanetExplorer.java ADD String generateExecuteCommandResult() METHOD
+UnitTestCaseAction 1476882881726 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476882881727 TestPlanetExplorer.java OK
+RefactoringAction 1476882939225 PlanetExplorer.java ADD char FORWARD_COMMAND FIELD
+RefactoringAction 1476882954248 PlanetExplorer.java ADD char BACKWARD_COMMAND FIELD
+RefactoringAction 1476882967774 PlanetExplorer.java ADD char RIGHT_COMMAND FIELD
+RefactoringAction 1476882980301 PlanetExplorer.java ADD char LEFT_COMMAND FIELD
+RefactoringAction 1476882999322 PlanetExplorer.java ADD String NORTH_DIRECTION FIELD
+RefactoringAction 1476883013840 PlanetExplorer.java ADD String EAST_DIRECTION FIELD
+RefactoringAction 1476883026860 PlanetExplorer.java ADD String WEST_DIRECTION FIELD
+RefactoringAction 1476883039383 PlanetExplorer.java ADD String SOUTH_DIRECTION FIELD
+RefactoringAction 1476883092438 PlanetExplorer.java ADD String STRING_DELIMITER FIELD
+UnitTestCaseAction 1476883107201 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476883107202 TestPlanetExplorer.java OK
+CompilationAction 1476883233759 PlanetExplorer.java
+CompilationAction 1476883238795 PlanetExplorer.java
+CompilationAction 1476883239011 TestPlanetExplorer.java
+CompilationAction 1476883260090 TestPlanetExplorer.java
+UnitTestCaseAction 1476883260475 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476883260477 TestPlanetExplorer.java OK

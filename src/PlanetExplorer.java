@@ -2,17 +2,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
-// ID:
-// Finish time:
+// ID: 134
+// Finish time: 16:20
 
 public class PlanetExplorer {
+
+	private static final String STRING_DELIMITER = ",";
+	private static final String SOUTH_DIRECTION = "S";
+	private static final String WEST_DIRECTION = "W";
+	private static final String EAST_DIRECTION = "E";
+	private static final String NORTH_DIRECTION = "N";
+	private static final char LEFT_COMMAND = 'l';
+	private static final char RIGHT_COMMAND = 'r';
+	private static final char BACKWARD_COMMAND = 'b';
+	private static final char FORWARD_COMMAND = 'f';
+
 	Position gridSize;
 	List<Position> obstaclesArray = new ArrayList<Position>();
 	Position cursorPosition = new Position(0, 0);
-	String direction = "N";
+	String direction = NORTH_DIRECTION;
 	List<Position> foundObstaclesArray = new ArrayList<Position>();
 
-	public PlanetExplorer(int x, int y, String obstacles) {
+	public PlanetExplorer(int x, int y, String obstacles) throws PlanetExplorerException {
 		/*
 		 * x and y represent the size of the grid. Obstacles is a String
 		 * formatted as follows:
@@ -29,22 +40,26 @@ public class PlanetExplorer {
 
 	}
 
-	private void convertStringToObstacleArray(String obstacles) {
+	private void convertStringToObstacleArray(String obstacles) throws PlanetExplorerException {
 		boolean positionXFilled = false;
 		char[] charArray = obstacles.toCharArray();
 		Position temp = new Position();
-		for (int loop = 0; loop < charArray.length; loop++) {
-			if (isInteger("" + charArray[loop])) {
-				if (positionXFilled) {
-					positionXFilled = false;
-					temp.setY(Integer.parseInt("" + charArray[loop]));
-					obstaclesArray.add(temp);
-				} else {
-					temp = new Position();
-					positionXFilled = true;
-					temp.setX(Integer.parseInt("" + charArray[loop]));
+		try {
+			for (int loop = 0; loop < charArray.length; loop++) {
+				if (isInteger("" + charArray[loop])) {
+					if (positionXFilled) {
+						positionXFilled = false;
+						temp.setY(Integer.parseInt("" + charArray[loop]));
+						obstaclesArray.add(temp);
+					} else {
+						temp = new Position();
+						positionXFilled = true;
+						temp.setX(Integer.parseInt("" + charArray[loop]));
+					}
 				}
 			}
+		} catch (Exception e) {
+			throw new PlanetExplorerException();
 		}
 	}
 
@@ -79,32 +94,36 @@ public class PlanetExplorer {
 
 		for (char oneCommand : charArrayofCommands) {
 			tempPosition = new Position(cursorPosition.getX(), cursorPosition.getY());
-			if (oneCommand == 'f') {
+			if (oneCommand == FORWARD_COMMAND) {
 				moveForward(tempPosition);
-			} else if (oneCommand == 'b') {
+			} else if (oneCommand == BACKWARD_COMMAND) {
 				moveBackward(tempPosition);
-			} else if (oneCommand == 'r') {
+			} else if (oneCommand == RIGHT_COMMAND) {
 				moveRight();
-			} else if (oneCommand == 'l') {
+			} else if (oneCommand == LEFT_COMMAND) {
 				moveLeft();
 			}
 
 		}
-		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")"
-				+ obstacleArrayToString();
+		return generateExecuteCommandResult();
+	}
+
+	private String generateExecuteCommandResult() {
+		return "(" + cursorPosition.getX() + STRING_DELIMITER + cursorPosition.getY() + STRING_DELIMITER + direction
+				+ ")" + obstacleArrayToString();
 	}
 
 	private void moveForward(Position tempPosition) throws PlanetExplorerException {
-		if (direction.equals("N")) {
+		if (direction.equals(NORTH_DIRECTION)) {
 			cursorPosition.incrementY(gridSize);
 			checkAndChangePosition(tempPosition);
-		} else if (direction.equals("E")) {
+		} else if (direction.equals(EAST_DIRECTION)) {
 			cursorPosition.incrementX(gridSize);
 			checkAndChangePosition(tempPosition);
-		} else if (direction.equals("W")) {
+		} else if (direction.equals(WEST_DIRECTION)) {
 			cursorPosition.decrementX();
 			checkAndChangePosition(tempPosition);
-		} else if (direction.equals("S")) {
+		} else if (direction.equals(SOUTH_DIRECTION)) {
 			cursorPosition.decrementY();
 			checkAndChangePosition(tempPosition);
 		}
@@ -116,41 +135,41 @@ public class PlanetExplorer {
 	}
 
 	private void moveBackward(Position tempPosition) throws PlanetExplorerException {
-		if (direction.equals("N")) {
+		if (direction.equals(NORTH_DIRECTION)) {
 			cursorPosition.decrementY();
 			checkAndChangePosition(tempPosition);
-		} else if (direction.equals("E")) {
+		} else if (direction.equals(EAST_DIRECTION)) {
 			cursorPosition.decrementX();
 			checkAndChangePosition(tempPosition);
-		} else if (direction.equals("W")) {
+		} else if (direction.equals(WEST_DIRECTION)) {
 			cursorPosition.incrementX(gridSize);
 			checkAndChangePosition(tempPosition);
-		} else if (direction.equals("S")) {
+		} else if (direction.equals(SOUTH_DIRECTION)) {
 			cursorPosition.incrementY(gridSize);
 			checkAndChangePosition(tempPosition);
 		}
 	}
 
 	private void moveRight() {
-		if (direction.equals("N"))
-			direction = "E";
-		else if (direction.equals("E"))
-			direction = "S";
-		else if (direction.equals("S"))
-			direction = "W";
-		else if (direction.equals("W"))
-			direction = "N";
+		if (direction.equals(NORTH_DIRECTION))
+			direction = EAST_DIRECTION;
+		else if (direction.equals(EAST_DIRECTION))
+			direction = SOUTH_DIRECTION;
+		else if (direction.equals(SOUTH_DIRECTION))
+			direction = WEST_DIRECTION;
+		else if (direction.equals(WEST_DIRECTION))
+			direction = NORTH_DIRECTION;
 	}
 
 	private void moveLeft() {
-		if (direction.equals("N"))
-			direction = "W";
-		else if (direction.equals("E"))
-			direction = "N";
-		else if (direction.equals("W"))
-			direction = "S";
-		else if (direction.equals("S"))
-			direction = "E";
+		if (direction.equals(NORTH_DIRECTION))
+			direction = WEST_DIRECTION;
+		else if (direction.equals(EAST_DIRECTION))
+			direction = NORTH_DIRECTION;
+		else if (direction.equals(WEST_DIRECTION))
+			direction = SOUTH_DIRECTION;
+		else if (direction.equals(SOUTH_DIRECTION))
+			direction = EAST_DIRECTION;
 	}
 
 	private String obstacleArrayToString() {

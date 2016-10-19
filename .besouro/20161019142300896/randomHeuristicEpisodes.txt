@@ -18,3 +18,7 @@
 1476881407046 test-addition 1 50 false
 1476881573234 test-addition 2 156 true
 1476882123947 test-first 3 542 true
+1476882756675 test-first 3 500 true
+1476882881727 refactoring 2B 54 false
+1476883107202 refactoring 2B 167 false
+1476883260477 regression 2 26 false

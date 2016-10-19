@@ -5,19 +5,19 @@ import org.junit.Test;
 public class TestPlanetExplorer {
 
 	@Test
-	public void test_planetExplorer_setObjectCheckX() {
+	public void test_planetExplorer_setObjectCheckX() throws PlanetExplorerException {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
 		assertEquals(100, planetExplorer.gridSize.getX());		
 	}
 	
 	@Test
-	public void test_planetExplorer_setObjectCheckY() {
+	public void test_planetExplorer_setObjectCheckY() throws PlanetExplorerException {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
 		assertEquals(100, planetExplorer.gridSize.getY());		
 	}
 	
 	@Test
-	public void test_planetExplorer_setObjectCheckObstacles() {
+	public void test_planetExplorer_setObjectCheckObstacles() throws PlanetExplorerException {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
 		assertEquals(1, planetExplorer.obstaclesArray.size());		
 	}
