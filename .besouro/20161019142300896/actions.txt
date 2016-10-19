@@ -94,3 +94,6 @@ RefactoringAction 1476878217587 TestPlanetExplorer.java ADD void test_planetExpl
 RefactoringAction 1476878229104 TestPlanetExplorer.java RENAME test_planetExplorer_setObjectCheckObstacles()/2=>void test_planetExplorer_move() METHOD
 RefactoringAction 1476878232118 TestPlanetExplorer.java RENAME test_planetExplorer_move()=>void test_planetExplorer_moveForward() METHOD
 EditAction 1476878376993 TestPlanetExplorer.java 887 4 8 4
+UnitTestCaseAction 1476878381071 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476878381072 TestPlanetExplorer.java FAIL
+EditAction 1476878473669 PlanetExplorer.java 2404 4 11 0

@@ -71,7 +71,10 @@ public class PlanetExplorer {
 		 * string should also contain a list of coordinates of the encountered
 		 * obstacles. No white spaces.
 		 */
-
+		char[] charArrayofCommands = command.toCharArray();
+		for (char oneCommand: charArrayofCommands) {
+			
+		}
 		return null;
 	}
 }
