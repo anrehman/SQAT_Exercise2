@@ -96,10 +96,10 @@ public class PlanetExplorer {
 
 	private void moveForward(Position tempPosition) throws PlanetExplorerException {
 		if (direction.equals("N")) {
-			cursorPosition.incrementY();
+			cursorPosition.incrementY(gridSize);
 			checkAndChangePosition(tempPosition);
 		} else if (direction.equals("E")) {
-			cursorPosition.incrementX();
+			cursorPosition.incrementX(gridSize);
 			checkAndChangePosition(tempPosition);
 		} else if (direction.equals("W")) {
 			cursorPosition.decrementX();
@@ -123,10 +123,10 @@ public class PlanetExplorer {
 			cursorPosition.decrementX();
 			checkAndChangePosition(tempPosition);
 		} else if (direction.equals("W")) {
-			cursorPosition.incrementX();
+			cursorPosition.incrementX(gridSize);
 			checkAndChangePosition(tempPosition);
 		} else if (direction.equals("S")) {
-			cursorPosition.incrementY();
+			cursorPosition.incrementY(gridSize);
 			checkAndChangePosition(tempPosition);
 		}
 	}
