@@ -23,9 +23,8 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_planetExplorer_moveForward() {
+	public void test_planetExplorer_moveForwardFromStart() {
 		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
-		
 		assertEquals("(0,1,N)", planetExplorer.executeCommand("f"));		
 	}
 }
