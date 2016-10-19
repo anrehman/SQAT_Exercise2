@@ -13,3 +13,9 @@ RefactoringAction 1476876874982 TestPlanetExplorer.java RENAME test_planetExplor
 EditAction 1476876877725 TestPlanetExplorer.java 266 2 1 0
 EditAction 1476876959666 TestPlanetExplorer.java 314 2 1 0
 EditAction 1476877004208 TestPlanetExplorer.java 316 2 1 0
+UnitTestCaseAction 1476877008133 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476877008135 TestPlanetExplorer.java OK
+RefactoringAction 1476877018938 TestPlanetExplorer.java REMOVE test_executeCommand() METHOD
+UnitTestCaseAction 1476877022920 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476877022921 TestPlanetExplorer.java OK
+EditAction 1476877047641 TestPlanetExplorer.java 239 1 2 0
