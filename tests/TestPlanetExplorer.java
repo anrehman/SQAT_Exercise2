@@ -30,13 +30,13 @@ public class TestPlanetExplorer {
 	
 	@Test
 	public void test_planetExplorer_moveRightAndForward() {
-		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
+		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(2,1)");
 		assertEquals("(1,0,E)", planetExplorer.executeCommand("rf"));		
 	}
 	
 	@Test
 	public void test_planetExplorer_moveRightForwardLeftForward() {
-		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(1,1)");
+		PlanetExplorer planetExplorer = new PlanetExplorer(100, 100, "(2,2)");
 		assertEquals("(1,1,N)", planetExplorer.executeCommand("rflf"));		
 	}
 	

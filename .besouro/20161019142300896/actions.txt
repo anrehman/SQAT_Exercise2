@@ -177,3 +177,6 @@ CompilationAction 1476879718441 Position.java
 RefactoringAction 1476879722134 Position.java RENAME decrementY()/2=>void decrementX() METHOD
 EditAction 1476879722483 Position.java 588 10 10 0
 EditAction 1476879734638 PlanetExplorer.java 3413 4 11 0
+UnitTestCaseAction 1476879741929 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476879741930 TestPlanetExplorer.java OK
+EditAction 1476879769263 TestPlanetExplorer.java 1533 7 14 7
