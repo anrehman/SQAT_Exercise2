@@ -168,3 +168,8 @@ RefactoringAction 1476879614821 TestPlanetExplorer.java ADD void test_planetExpl
 RefactoringAction 1476879623334 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightAndForward()/2=>void test_planetExplorer_moveRightForward() METHOD
 RefactoringAction 1476879629346 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightForward()=>void test_planetExplorer_moveRightForwardBackward() METHOD
 EditAction 1476879639122 TestPlanetExplorer.java 1533 7 14 7
+UnitTestCaseAction 1476879642149 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476879642149 TestPlanetExplorer.java FAIL
+RefactoringAction 1476879691774 Position.java ADD void decrementY() METHOD
+RefactoringAction 1476879698064 Position.java ADD void decrementY()/2 METHOD
+EditAction 1476879716596 Position.java 588 10 10 0

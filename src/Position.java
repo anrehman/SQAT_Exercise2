@@ -35,4 +35,12 @@ public class Position {
 	public void incrementX() {
 		this.x = (this.x + 1);
 	}
+
+	public void decrementY() {
+		this.y = (this.y - 1);
+	}
+
+	public void decrementY() {
+		this.x = (this.x - 1);
+	}
 }
