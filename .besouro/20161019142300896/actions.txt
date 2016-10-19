@@ -139,3 +139,7 @@ UnitTestCaseAction 1476879116280 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476879116280 TestPlanetExplorer.java FAIL
 EditAction 1476879164926 PlanetExplorer.java 2819 4 11 0
 EditAction 1476879192950 PlanetExplorer.java 2827 4 11 0
+UnitTestCaseAction 1476879196290 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476879196291 TestPlanetExplorer.java OK
+RefactoringAction 1476879213838 PlanetExplorer.java ADD void incrementX() METHOD
+EditAction 1476879213856 PlanetExplorer.java 2876 5 12 0
