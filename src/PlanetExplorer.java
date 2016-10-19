@@ -78,27 +78,27 @@ public class PlanetExplorer {
 		Position tempPosition;
 
 		for (char oneCommand : charArrayofCommands) {
-			tempPosition = cursorPosition;
+			tempPosition = new Position(cursorPosition.getX(), cursorPosition.getY());
 
 			if (oneCommand == 'f') {
 				if (direction.equals("N")) {
-					tempPosition.incrementY();
-					if (!checkObstacle(tempPosition))
+					cursorPosition.incrementY();
+					if (checkObstacle(cursorPosition))
 						cursorPosition = tempPosition;
 				} else if (direction.equals("E")) {
-					tempPosition.incrementX();
-					if (!checkObstacle(tempPosition))
+					cursorPosition.incrementX();
+					if (checkObstacle(cursorPosition))
 						cursorPosition = tempPosition;
 				}
 
 			} else if (oneCommand == 'b') {
 				if (direction.equals("N")) {
-					tempPosition.decrementY();
-					if (!checkObstacle(tempPosition))
+					cursorPosition.decrementY();
+					if (checkObstacle(cursorPosition))
 						cursorPosition = tempPosition;
 				} else if (direction.equals("E")) {
-					tempPosition.decrementX();
-					if (!checkObstacle(tempPosition))
+					cursorPosition.decrementX();
+					if (checkObstacle(cursorPosition))
 						cursorPosition = tempPosition;
 				}
 			} else if (oneCommand == 'r') {
@@ -111,19 +111,23 @@ public class PlanetExplorer {
 				else if (direction.equals("W"))
 					direction = "N";
 			} else if (oneCommand == 'l') {
-				if (direction.equals("N"))
-					direction = "W";
-				else if (direction.equals("E"))
-					direction = "N";
-				else if (direction.equals("W"))
-					direction = "S";
-				else if (direction.equals("S"))
-					direction = "E";
+				moveLeft();
 			}
 
 		}
 		return "(" + cursorPosition.getX() + "," + cursorPosition.getY() + "," + direction + ")"
 				+ obstacleArrayToString();
+	}
+
+	private void moveLeft() {
+		if (direction.equals("N"))
+			direction = "W";
+		else if (direction.equals("E"))
+			direction = "N";
+		else if (direction.equals("W"))
+			direction = "S";
+		else if (direction.equals("S"))
+			direction = "E";
 	}
 
 	private String obstacleArrayToString() {

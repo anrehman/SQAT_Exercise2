@@ -218,3 +218,22 @@ RefactoringAction 1476880619331 PlanetExplorer.java ADD String obstacleArrayToSt
 RefactoringAction 1476880640710 Position.java ADD String toString() METHOD
 EditAction 1476880690986 Position.java 883 12 14 0
 EditAction 1476880747382 PlanetExplorer.java 4310 6 17 0
+UnitTestCaseAction 1476880756006 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476880756008 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476881081547 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476881081548 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476881127483 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476881127484 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476881178202 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476881178203 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476881203348 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476881203349 TestPlanetExplorer.java OK
+RefactoringAction 1476881240402 PlanetExplorer.java ADD void moveLeft() METHOD
+UnitTestCaseAction 1476881249672 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476881249672 TestPlanetExplorer.java OK
+RefactoringAction 1476881295179 TestPlanetExplorer.java ADD void test_planetExplorer_moveRightForwardLeftForwardObstacleFound()/2 METHOD
+RefactoringAction 1476881299691 TestPlanetExplorer.java RENAME test_planetExplorer_moveRightForwardLeftForwardObstacleFound()/2=>void test_planetExplorer_moveForwardLeftForwardObstacleFound() METHOD
+RefactoringAction 1476881304702 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardLeftForwardObstacleFound()=>void test_planetExplorer_moveForwardForwardObstacleFound() METHOD
+RefactoringAction 1476881309714 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardForwardObstacleFound()=>void test_planetExplorer_moveForwardForwardRight() METHOD
+RefactoringAction 1476881312225 TestPlanetExplorer.java RENAME test_planetExplorer_moveForwardForwardRight()=>void test_planetExplorer_moveForwardForwardRightForward() METHOD
+EditAction 1476881340443 TestPlanetExplorer.java 1990 9 18 9
